@@ -59,7 +59,7 @@ const HeroSection = () => {
 
               {/* CTA Button */}
               <div className="flex flex-wrap items-center gap-4">
-                <Link href="/products">
+                <Link href={"/#all-products"}>
                   <Button
                     className="bg-green-700 text-white font-semibold px-6 shadow-md hover:bg-green-800"
                     endContent={<ArrowRight size={17} />}
