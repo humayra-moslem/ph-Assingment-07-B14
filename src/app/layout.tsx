@@ -4,7 +4,10 @@ import "./globals.css";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+
+import { Toaster } from "react-hot-toast";
 import Marquee from "./components/Marquee";
+import NavLinks from "./components/NavLinks";
 
 const HindSiliguri = Hind_Siliguri({
   subsets: ["latin", "bengali"],
@@ -25,9 +28,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <Marquee/>
-
-        {children}
+        <NavLinks/>
+         <Marquee/>
+        <main>
+          {children}
+        </main>
+        <Toaster/>
         <Footer />
       </body>
     </html>
