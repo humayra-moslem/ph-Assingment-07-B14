@@ -1,4 +1,4 @@
-export interface Product {
+export interface IProduct {
   id: number;
   slug: string;
   nameBn: string;
@@ -23,7 +23,7 @@ export interface Product {
   }[];
 }
 
-export interface Category {
+export interface ICategory {
   id: string;
   slug: string;
   nameBn: string;

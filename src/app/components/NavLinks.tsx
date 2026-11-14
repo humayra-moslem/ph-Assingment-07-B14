@@ -2,7 +2,8 @@
 
 
 import Link from "next/link";
-import { Category } from "../types";
+import { ICategory } from "../types";
+
 
 const NavLinks = async () => {
   const res = await fetch(
@@ -13,7 +14,7 @@ const NavLinks = async () => {
     throw new Error("Failed to fetch categories");
   }
 
-  const navs: Category[] = await res.json();
+  const navs: ICategory[] = await res.json();
 
   return (
     

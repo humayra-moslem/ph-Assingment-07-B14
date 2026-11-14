@@ -44,8 +44,9 @@
 import Link from "next/link";
 import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
+import { IProduct } from "../types";
 
-import { Product } from "../types";
+
 
 const Marquee = async () => {
   const res = await fetch(
@@ -56,7 +57,7 @@ const Marquee = async () => {
     throw new Error("Failed to fetch products");
   }
 
-  const products: Product[] = await res.json();
+  const products: IProduct[] = await res.json();
 
   return (
     <div className="bg-white border-y border-gray-100 text-gray-700">
