@@ -69,17 +69,17 @@ export default function PriceFallers() {
             </h2>
 
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm text-slate-500 font-medium">
+            {/* <p className="text-xs sm:text-sm text-slate-500 font-medium">
               আজ যেসব পণ্যের দাম কমেছে — সাশ্রয়ী দামে বাজার করুন
               (শীর্ষ ৬টি পণ্য)
-            </p>
+            </p> */}
 
           </div>
 
           {/* Sort Info */}
-          <span className="text-xs text-slate-400 font-medium">
+          {/* <span className="text-xs text-slate-400 font-medium">
             সর্বোচ্চ হ্রাস অনুযায়ী সাজানো
-          </span>
+          </span> */}
 
         </div>
 

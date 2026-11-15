@@ -60,11 +60,11 @@ const HeroSection = () => {
               {/* CTA Button */}
               <div className="flex flex-wrap items-center gap-4">
                 <Link href={"/#all-products"}>
-                  <Button
-                    className="bg-green-700 text-white font-semibold px-6 shadow-md hover:bg-green-800"
-                    endContent={<ArrowRight size={17} />}
-                  >
-                    সব পণ্য দেখুন
+                  <Button className="bg-green-700 text-white font-semibold px-6 shadow-md hover:bg-green-800">
+                    <span className="flex items-center gap-2">
+                      <span>সব পণ্য দেখুন</span>
+                      <ArrowRight size={17} />
+                    </span>
                   </Button>
                 </Link>
 

@@ -3,11 +3,13 @@
 
 import Link from "next/link";
 import { ICategory } from "../types";
+import ProductTicker from "./ProductTicker";
 
 
 const NavLinks = async () => {
   const res = await fetch(
-    "https://openapi.programming-hero.com/api/bazardor/categories"
+    
+    `${process.env.NEXT_PUBLIC_APP_URL}/categories`
   );
 
   if (!res.ok) {
@@ -37,6 +39,7 @@ const NavLinks = async () => {
     </nav>
     </div>
     </div>
+    
   );
 };
 

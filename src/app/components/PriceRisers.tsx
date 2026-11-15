@@ -57,14 +57,14 @@ const PriceRiserSection = () => {
               <span className="text-[#ef4444] text-xl sm:text-2xl">▲</span>
             </h2>
 
-            <p className="text-xs sm:text-sm text-slate-500 font-medium">
+            {/* <p className="text-xs sm:text-sm text-slate-500 font-medium">
               আজ যেসব পণ্যের দাম সর্বোচ্চ বৃদ্ধি পেয়েছে (শীর্ষ ৬টি পণ্য)
-            </p>
+            </p> */}
           </div>
 
-          <span className="text-xs text-slate-400 font-medium">
+          {/* <span className="text-xs text-slate-400 font-medium">
             সর্বোচ্চ থেকে ক্রমানুসারে সাজানো
-          </span>
+          </span> */}
         </div>
 
         {loading ? (
