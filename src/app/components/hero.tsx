@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@heroui/react";
@@ -12,18 +12,12 @@ import {
 } from "lucide-react";
 
 const HeroSection = () => {
-  const [date, setDate] = useState("");
-
-  useEffect(() => {
-    setDate(
-      new Intl.DateTimeFormat("bn-BD", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      }).format(new Date())
-    );
-  }, []);
+  const date = new Intl.DateTimeFormat("bn-BD", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date());
 
   return (
     <section className="px-4 pt-5 pb-3">
@@ -38,7 +32,7 @@ const HeroSection = () => {
               {/* Date Badge */}
               <div className="inline-flex items-center gap-2 rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
                 <CalendarDays size={14} />
-                {date || "আজকের বাজার"}
+                {date}
               </div>
 
               {/* Heading */}

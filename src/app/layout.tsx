@@ -7,7 +7,7 @@ import Header from "./components/Header";
 
 import { Toaster } from "react-hot-toast";
 
-import NavLinks from "./components/NavLinks";
+
 import ProductTicker from "./components/ProductTicker";
 
 const HindSiliguri = Hind_Siliguri({
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <NavLinks/>
+        
          <ProductTicker/>
         <main>
           {children}
