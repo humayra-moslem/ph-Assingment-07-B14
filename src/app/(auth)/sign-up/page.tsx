@@ -81,19 +81,19 @@ export default function SignUpPage() {
   };
 
   // GitHub Login
-  // const handleGithubSignIn = async () => {
-  //   try {
-  //     const { error } = await signIn.social({
-  //       provider: "github",
-  //     });
+  const handleGithubSignIn = async () => {
+    try {
+      const { error } = await signIn.social({
+        provider: "github",
+      });
 
-  //     if (error) {
-  //       toast.error(error.message ?? "GitHub দিয়ে সাইন আপ করা যায়নি!");
-  //     }
-  //   } catch {
-  //     toast.error("GitHub দিয়ে সাইন আপ করা যায়নি!");
-  //   }
-  // };
+      if (error) {
+        toast.error(error.message ?? "GitHub দিয়ে সাইন আপ করা যায়নি!");
+      }
+    } catch {
+      toast.error("GitHub দিয়ে সাইন আপ করা যায়নি!");
+    }
+  };
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#f0f5f0] px-4 py-10">
@@ -245,7 +245,7 @@ export default function SignUpPage() {
             </Button>
 
             {/* GitHub */}
-            {/* <Button
+            <Button
               type="button"
               onClick={handleGithubSignIn}
               variant="outline"
@@ -261,7 +261,7 @@ export default function SignUpPage() {
               </svg>
 
               <span>GitHub দিয়ে চালিয়ে যান</span>
-            </Button> */}
+            </Button>
           </div>
         </Card.Content>
 
